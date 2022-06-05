@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Приложение</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="Contracts">
+         <attribute name="title">
+          <string>Договоры</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="table_Contracts">
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <column>
+             <property name="text">
+              <string>Номер договора</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Дата заключения</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Организация</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Представитель</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Основание</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Юридический адрес</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ОГРН</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>ИНН</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>КПП</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>БИК</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Расчетный счет</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="Spec">
+         <attribute name="title">
+          <string>Спецификации</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>5</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="table_Spec">
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <column>
+             <property name="text">
+              <string>ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Номер приложения</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Номер договора</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Дата составления</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QTableWidget" name="table_Goods">
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <column>
+             <property name="text">
+              <string>ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Товары</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Кол-во</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Ед. изм.</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Цена за единицу
+руб.</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="Banks">
+         <attribute name="title">
+          <string>Справочник БИК</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="table_BIK">
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <attribute name="horizontalHeaderCascadingSectionResizes">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>190</number>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>БИК</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Наименование
+банка</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Корреспондентский
+счет</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="OKEI">
+         <attribute name="title">
+          <string>ОКЕИ</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QTableWidget" name="table_OKEI">
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
+            </property>
+            <column>
+             <property name="text">
+              <string>Код</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Новый столбец</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Условное 
+обозначение</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="Records">
+        <property name="text">
+         <string>Записи:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addRecord">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Добавить запись</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="updateRecord">
+        <property name="text">
+         <string>Изменить запись</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Удалить запись</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Docx">
+        <property name="text">
+         <string>Документ:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="toDocx">
+        <property name="text">
+         <string>Составить docx</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="Spec_label">
+        <property name="text">
+         <string>Спецификация:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addSpec">
+        <property name="text">
+         <string>Составить спекцификацию</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="addGoods">
+        <property name="text">
+         <string>Добавить товар</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="updateGoods">
+        <property name="text">
+         <string>Изменить товар</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="removeGoods">
+        <property name="text">
+         <string>Удалить товар</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
